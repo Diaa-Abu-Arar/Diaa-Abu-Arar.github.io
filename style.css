@@ -1,204 +1,363 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-body {
-  font-family: Arial, sans-serif;
-  color: #1f2937;
-  background: #ffffff;
-  line-height: 1.6;
-}
+  <title>Diaa Abu Arar | Data, BI & Business Analysis Portfolio</title>
 
-.container {
-  width: 90%;
-  max-width: 1120px;
-  margin: auto;
-}
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-.header {
-  background: white;
-  border-bottom: 1px solid #e5e7eb;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <h2>Diaa Abu Arar</h2>
 
-.nav {
-  padding: 18px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#data">Data Analytics</a>
+        <a href="#business">Business Analysis</a>
+        <a href="#it">IT & Operations</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-.nav h2 {
-  font-size: 22px;
-  color: #111827;
-}
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
 
-.nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #374151;
-  font-weight: 600;
-}
+      <div class="hero-content">
+        <p class="tag">Data Analysis • Business Intelligence • Business Analysis • IT Operations</p>
 
-.nav a:hover {
-  color: #2563eb;
-}
+        <h1>Practical analytics and business analysis projects for real workplace problems.</h1>
 
-.hero {
-  padding: 95px 0;
-  background: linear-gradient(135deg, #eff6ff, #ffffff);
-}
+        <p class="hero-text">
+          I build structured portfolio projects that connect data, reporting, IT-supported operations,
+          process improvement, and decision support using tools such as Power BI, SQL, Excel,
+          Tableau, SPSS, SAS, SAP concepts, Jira, and business analysis documentation.
+        </p>
 
-.tag {
-  color: #2563eb;
-  font-weight: bold;
-  margin-bottom: 14px;
-}
+        <div class="buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
 
-.hero h1 {
-  font-size: 44px;
-  max-width: 850px;
-  color: #111827;
-  margin-bottom: 20px;
-  line-height: 1.15;
-}
+      <div class="hero-photo-wrapper">
+        <img src="assets/images/profile.jpg" alt="Diaa Abu Arar" class="profile-photo">
+      </div>
 
-.hero-text {
-  font-size: 20px;
-  max-width: 780px;
-  color: #4b5563;
-  margin-bottom: 30px;
-}
+    </div>
+  </section>
 
-.buttons {
-  display: flex;
-  gap: 15px;
-}
+  <!-- About -->
+  <section class="section">
+    <div class="container narrow">
+      <h2>About Me</h2>
 
-.btn {
-  display: inline-block;
-  padding: 12px 22px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
+      <p>
+        I am a data and operations professional based in Prague, with an M.Sc. in Informatics
+        and experience across reporting, coordination, data quality, operational workflows,
+        dashboarding, and IT-supported operations.
+      </p>
 
-.primary {
-  background: #2563eb;
-  color: white;
-}
+      <p>
+        This portfolio is designed to present practical, job-relevant projects through clear
+        case studies. Each project focuses on a business problem, tools used, methodology,
+        data preparation, analysis, documentation, findings, and recommendations.
+      </p>
+    </div>
+  </section>
 
-.secondary {
-  border: 1px solid #2563eb;
-  color: #2563eb;
-}
+  <!-- What I Do -->
+  <section class="section gray">
+    <div class="container">
+      <h2>What I Do</h2>
 
-.section {
-  padding: 70px 0;
-}
+      <div class="focus-grid">
 
-.section h2 {
-  font-size: 32px;
-  color: #111827;
-  margin-bottom: 25px;
-}
+        <div class="focus-card">
+          <h3>Data Analytics & BI</h3>
+          <p>
+            Data cleaning, SQL analysis, Power BI dashboards, Tableau visualizations,
+            KPI reporting, data modeling, DAX, Power Query, and executive reporting.
+          </p>
+        </div>
 
-.section p {
-  font-size: 17px;
-  color: #4b5563;
-}
+        <div class="focus-card">
+          <h3>Business Analysis</h3>
+          <p>
+            Requirements gathering, user stories, acceptance criteria, process mapping,
+            BPMN, UML, UAT, traceability, and Jira/Confluence-style documentation.
+          </p>
+        </div>
 
-.gray {
-  background: #f9fafb;
-}
+        <div class="focus-card">
+          <h3>IT & Operations Analytics</h3>
+          <p>
+            Service desk analytics, SLA tracking, IT asset reporting, operational KPIs,
+            root-cause analysis, risks, issues, SOPs, and workflow improvement.
+          </p>
+        </div>
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
+      </div>
+    </div>
+  </section>
 
-.project-card {
-  background: white;
-  padding: 26px;
-  border-radius: 14px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-}
+  <!-- Projects -->
+  <main id="projects">
 
-.project-card h3 {
-  color: #111827;
-  margin-bottom: 12px;
-}
+    <!-- Data Analytics Projects -->
+    <section id="data" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Portfolio Category</p>
+          <h2>Data Analytics Projects</h2>
+          <p class="section-intro">
+            Projects focused on data preparation, analysis, dashboards, statistical analysis,
+            reporting, data quality, and decision support.
+          </p>
+        </div>
 
-.project-card p {
-  margin-bottom: 12px;
-}
+        <div class="project-grid">
 
-.project-card a {
-  color: #2563eb;
-  font-weight: bold;
-  text-decoration: none;
-}
+          <article class="project-card">
+            <span class="category data">Data Analytics</span>
+            <h3>Customer Segmentation Analytics</h3>
+            <p>
+              Customer segmentation project using CRISP-DM, clustering techniques, and model
+              evaluation to support customer analytics and business decision-making.
+            </p>
+            <p><strong>Tools:</strong> Python, SAS, SPSS, Data Mining</p>
+            <a href="https://github.com/Diaa-Abu-Arar/Customer-Segmentation-Analytics-CRISPDM" target="_blank">View Project</a>
+          </article>
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
+          <article class="project-card">
+            <span class="category data">Power BI</span>
+            <h3>Power BI Operational Data Quality Dashboard</h3>
+            <p>
+              Power BI dashboard focused on operational reporting, KPI monitoring,
+              data validation, missing values, duplicate records, and management visibility.
+            </p>
+            <p><strong>Tools:</strong> Power BI, Power Query, Excel</p>
+            <a href="https://github.com/Diaa-Abu-Arar/PowerBI-Operational-Data-Quality-Dashboard" target="_blank">View Project</a>
+          </article>
 
-.skills-grid div {
-  background: #f9fafb;
-  padding: 22px;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
-}
+          <article class="project-card">
+            <span class="category data">Power BI</span>
+            <h3>Power BI DIAD Dashboard</h3>
+            <p>
+              BI workflow project demonstrating data loading, transformation, dashboard design,
+              and insight presentation using Power BI.
+            </p>
+            <p><strong>Tools:</strong> Power BI, Power Query, Excel</p>
+            <a href="https://github.com/Diaa-Abu-Arar/PowerBI-DIAD-Dashboard" target="_blank">View Project</a>
+          </article>
 
-.skills-grid h3 {
-  color: #111827;
-  margin-bottom: 10px;
-}
+          <article class="project-card">
+            <span class="category stats">SPSS</span>
+            <h3>SPSS Service Quality & Satisfaction Analysis</h3>
+            <p>
+              SPSS-based analysis of service quality and satisfaction using reliability checks,
+              correlation, regression, and evidence-based interpretation.
+            </p>
+            <p><strong>Tools:</strong> SPSS, Statistics, Survey Analysis</p>
+            <a href="https://github.com/Diaa-Abu-Arar/SPSS-Service-Quality-Beneficiary-Satisfaction-Analysis" target="_blank">View Project</a>
+          </article>
 
-.footer {
-  background: #111827;
-  color: white;
-  text-align: center;
-  padding: 25px;
-}
+        </div>
+      </div>
+    </section>
 
-.footer p {
-  color: white;
-}
+    <!-- Business Analysis Projects -->
+    <section id="business" class="section gray">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Portfolio Category</p>
+          <h2>Business Analysis Projects</h2>
+          <p class="section-intro">
+            Projects focused on requirements, process mapping, documentation, workflows,
+            user needs, acceptance criteria, and business process improvement.
+          </p>
+        </div>
 
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    gap: 12px;
-  }
+        <div class="project-grid">
 
-  .nav a {
-    margin: 0 8px;
-  }
+          <article class="project-card">
+            <span class="category business">Business Analysis</span>
+            <h3>BPMN Online Bookstore Process Optimization</h3>
+            <p>
+              Business process modeling project covering customer ordering, stock checking,
+              payment, invoicing, delivery, feedback, and process optimization.
+            </p>
+            <p><strong>Tools:</strong> BPMN, Process Mapping, Business Analysis</p>
+            <a href="https://github.com/Diaa-Abu-Arar/BPMN-Online-Bookstore-Process-Optimization" target="_blank">View Project</a>
+          </article>
 
-  .hero h1 {
-    font-size: 32px;
-  }
+        </div>
+      </div>
+    </section>
 
-  .hero-text {
-    font-size: 18px;
-  }
+    <!-- IT & Operations Projects -->
+    <section id="it" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Portfolio Category</p>
+          <h2>IT & Operations Analytics Projects</h2>
+          <p class="section-intro">
+            Projects connected to IT infrastructure, service operations, technical documentation,
+            operational tracking, workflows, and structured problem-solving.
+          </p>
+        </div>
 
-  .project-grid,
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
+        <div class="project-grid">
 
-  .buttons {
-    flex-direction: column;
-    width: fit-content;
-  }
-}
+          <article class="project-card">
+            <span class="category it">IT & Infrastructure</span>
+            <h3>Enterprise Network Design</h3>
+            <p>
+              Network design project for HQ and branch infrastructure including VLANs, servers,
+              VPN, firewall, VoIP, Wi-Fi, IP addressing, and technical documentation.
+            </p>
+            <p><strong>Tools:</strong> Networking, IT Infrastructure, Documentation</p>
+            <a href="https://github.com/Diaa-Abu-Arar/Enterprise-Network-Design-HQ-Branch" target="_blank">View Project</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Skills -->
+  <section id="skills" class="section gray">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+
+      <div class="skills-grid">
+
+        <div>
+          <h3>Data & BI</h3>
+          <p>
+            Power BI, Power Query, DAX, SQL, Excel, Tableau, data cleaning,
+            data validation, data modeling, dashboards, KPI reporting.
+          </p>
+        </div>
+
+        <div>
+          <h3>Statistical Analysis</h3>
+          <p>
+            SPSS, SAS, descriptive statistics, reliability analysis, correlation,
+            regression, hypothesis testing, survey analysis.
+          </p>
+        </div>
+
+        <div>
+          <h3>Business Analysis</h3>
+          <p>
+            Requirements gathering, BRD, user stories, acceptance criteria,
+            BPMN, UML, UAT, traceability matrix, process mapping.
+          </p>
+        </div>
+
+        <div>
+          <h3>IT & Operations</h3>
+          <p>
+            IT support analytics, SLA tracking, ticket analysis, operational KPIs,
+            SOPs, documentation, risk tracking, workflow improvement.
+          </p>
+        </div>
+
+        <div>
+          <h3>ERP & Governance</h3>
+          <p>
+            SAP S/4HANA concepts, procurement analytics, vendor tracking,
+            data governance, metadata, data quality rules, data lineage.
+          </p>
+        </div>
+
+        <div>
+          <h3>Tools & Collaboration</h3>
+          <p>
+            GitHub, Jira, Confluence-style documentation, MS Project, ProjectLibre,
+            Microsoft Office, stakeholder communication.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section class="section">
+    <div class="container narrow">
+      <h2>How I Work</h2>
+
+      <div class="method-list">
+        <div>
+          <span>01</span>
+          <p>Understand the business problem and expected decision.</p>
+        </div>
+
+        <div>
+          <span>02</span>
+          <p>Review the dataset, structure, source, and quality issues.</p>
+        </div>
+
+        <div>
+          <span>03</span>
+          <p>Clean, validate, transform, and document the data preparation steps.</p>
+        </div>
+
+        <div>
+          <span>04</span>
+          <p>Analyze patterns, KPIs, risks, gaps, and operational performance.</p>
+        </div>
+
+        <div>
+          <span>05</span>
+          <p>Build dashboards, reports, process maps, or business analysis documents.</p>
+        </div>
+
+        <div>
+          <span>06</span>
+          <p>Translate findings into practical recommendations and next steps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section gray">
+    <div class="container narrow">
+      <h2>Contact</h2>
+
+      <p>
+        I am open to opportunities related to data analysis, business intelligence,
+        business analysis, reporting, IT operations analytics, and operational process improvement.
+      </p>
+
+      <div class="contact-box">
+        <p><strong>Email:</strong> diaa.arar89@gmail.com</p>
+        <p><strong>Location:</strong> Prague, Czech Republic</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Diaa-Abu-Arar" target="_blank">github.com/Diaa-Abu-Arar</a></p>
+        <p><strong>LinkedIn:</strong> Add your LinkedIn link here</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Diaa Abu Arar. All rights reserved.</p>
+
+    <div class="visitor-counter">
+      <img src="https://hits.sh/diaa-abu-arar.github.io.svg?style=flat-square&label=Portfolio%20views&color=2563eb" alt="Portfolio views">
+    </div>
+  </footer>
+
+</body>
+</html>
